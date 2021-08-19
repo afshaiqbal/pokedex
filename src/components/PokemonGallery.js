@@ -3,6 +3,8 @@ import { pokemons } from '../pokemonList';
 import { Link } from 'react-router-dom';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import Button from '@material-ui/core/Button';
+import { red } from '@material-ui/core/colors';
+import '../App.css';
 
 function GalleryItem(props) {
   const { children, pokemonName } = props;
@@ -66,18 +68,21 @@ function PokemonGallery() {
   return (
     <div
       style={{
+        paddingBottom:'20px',
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
         gridTemplateRows: '1fr 1fr 1fr',
         gridGap: '10px',
         height: '400px',
+        fontFamily: 'sans-serif',
+        fontSize: '1.5rem',
       }}
     >
       {randomPokemons.map((pokemon) => {
         const { name } = pokemon;
         return (
           <GalleryItem key={name} pokemonName={name}>
-            <Link to={'/pokemon/' + name}>{name}</Link>
+            <Link to ={'/pokemon/' + name} className="linkStyle">{name} </Link>
           </GalleryItem>
         );
       })}

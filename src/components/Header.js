@@ -1,3 +1,4 @@
+
 function Header() {
   return (
     <header
@@ -6,6 +7,8 @@ function Header() {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'lightgrey',
+        width:'100%',
+        backgroundSize: 'cover'
       }}
     >
       <img

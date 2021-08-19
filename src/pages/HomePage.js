@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <>
       <h1>Search</h1>
-      <div style={{ marginTop: '20px', display: 'flex' }}>
+      <div style={{marginTop: '20px', display: 'flex' }}>
         <Autocomplete
           id="combo-box-demo"
           options={pokemons}
@@ -32,7 +32,7 @@ function HomePage() {
         <Link
           to={selection ? '/pokemon/' + selection.name : '/'}
           component={function (props) {
-            return <Button variant="contained" color="primary" {...props} />;
+            return <Button variant="contained" className="button" {...props} />;
           }}
         >
           Go to Pokemon

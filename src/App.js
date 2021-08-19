@@ -27,15 +27,17 @@ function Pokemon(props) {
 
   // const { }
   return (
-    <div style={{ width: '100%', backgroundColor: 'lightblue' }}>
-      {data.name}
-      {data.height}
-      <img
+    <div className="pokemonData">
+      <img 
         src={getPokemonImageFromData(data)}
         width={300}
         alt={'poke ball'}
         height={300}
       />
+     <p className="pokemonName">
+     <span >Pokemon name: {data.name}</span>
+    <span>Pokemon Height: {data.height}</span>
+     </p>
     </div>
   );
 }

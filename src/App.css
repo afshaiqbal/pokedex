@@ -1,3 +1,15 @@
+
+
+body{
+  height: 100vh;
+  font-family: 'montseratt',sans-serif;
+background-image:url('https://wallpapercave.com/wp/cqhO8rQ.jpg');
+   background-repeat: no-repeat; 
+  background-position:center;
+  background-size: cover;
+  transition: 0.4 ease-out;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +47,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+.linkStyle{
+  text-decoration: none;
+  color: rgb(7, 3, 3);
+  text-transform: uppercase;
+
+}
+.pokemonData{
+  border: 0.5rem solid black;
+  padding: 0 5px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.pokemonName{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
